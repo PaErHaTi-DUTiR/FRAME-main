@@ -2,8 +2,6 @@
 
 **Failure-aware Knowledge Bridging for Low-Resource Multilingual Named Entity Recognition with Large Language Models**
 
-Code and sample data accompanying the manuscript submitted to *Information Processing & Management (IPM)*.
-
 ![FRAME overview](assets/fig_overview.png)
 
 ## Overview
@@ -105,16 +103,7 @@ The full-scale experiments in the paper (up to 100 sentences/language across 64 
 
 ## Citation
 
-This manuscript is currently under review at *Information Processing & Management*. The citation below will be completed upon acceptance.
-
-```bibtex
-@article{frame2026,
-  title   = {FRAME: Failure-aware Knowledge Bridging for Low-Resource Multilingual Named Entity Recognition with Large Language Models},
-  journal = {Information Processing \& Management},
-  note    = {Manuscript under review},
-  year    = {2026}
-}
-```
+This manuscript is currently under review. The citation below will be completed upon acceptance.
 
 ## License
 
