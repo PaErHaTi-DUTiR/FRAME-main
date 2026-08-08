@@ -1,0 +1,45 @@
+run_name: ablf_conll03_en
+experiment_type: ablation_suite
+
+dataset:
+  name: conll03
+  language: en
+
+limits:
+  max_samples_per_language: 10
+  quality_sample: false
+  low_resource_ratio: 1.0
+
+pipeline:
+  label_schema: ["PER","ORG","LOC","MISC"]
+  candidate:
+    sc_samples: 1
+    sc_threshold: 0.1
+    demo_k: 3
+    demo_mode: cross_lingual
+
+ablation_variants:
+  - name: karve_x
+    mode: karve_x
+
+  - name: wo_typeagent
+    mode: karve_x
+    pipeline:
+      disable_type_agent: true
+
+  - name: wo_gazetteer
+    mode: karve_x
+    pipeline:
+      disable_gazetteer: true
+
+  - name: wo_crossdemo
+    mode: karve_x
+    pipeline:
+      candidate:
+        sc_samples: 1
+        sc_threshold: 0.1
+        demo_k: 3
+        demo_mode: jaccard
+
+  - name: single_agent
+    mode: single_agent_baseline

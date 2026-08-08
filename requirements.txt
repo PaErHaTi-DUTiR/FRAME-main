@@ -1,0 +1,19 @@
+# FRAME core runtime
+PyYAML>=6.0
+requests>=2.31.0
+openai>=1.0.0
+json_repair>=0.50.0
+tqdm>=4.66.0
+
+# Cross-lingual semantic bridge (dense multilingual demonstration retrieval).
+# Downloads paraphrase-multilingual-MiniLM-L12-v2 (~470MB) on first run.
+# If unavailable, DemoMemoryRetriever falls back to a lexical (Jaccard) mode.
+sentence-transformers>=2.2.0
+
+# Data and evaluation
+numpy>=1.26.0
+pandas>=2.0.0
+seqeval>=1.2.2
+
+# Development and testing
+pytest>=8.0.0
