@@ -95,7 +95,7 @@ The cross-lingual bridge's dense retrieval mode downloads `paraphrase-multilingu
 
 ## Reproducing the full paper results
 
-The full-scale experiments in the paper (up to 100 sentences/language across 64 languages) use the complete WikiANN, CoNLL-03/02, and MasakhaNER2.0 training and test splits, which are not redistributed in this repository due to their size. To reproduce the full results:
+The full-scale experiments in the paper use the complete WikiANN, CoNLL-03/02, and MasakhaNER2.0 training and test splits, which are not redistributed in this repository due to their size. To reproduce the full results:
 
 1. Obtain the datasets from their original public sources (WikiANN, CoNLL-2003/2002, MasakhaNER2.0).
 2. Convert each split into the same schema used in `sample_data/` — one JSON object per line, with `text`, `tokens`, and `entities` (`start`/`end`/`text`/`label`) fields — under `datasets/processed/<dataset>/<language>/<split>.jsonl`.
