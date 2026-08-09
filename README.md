@@ -89,7 +89,7 @@ python scripts/run_ablation.py \
   --experiment configs/experiments/ablf_wikiann_en.yaml
 ```
 
-This runs full FRAME (`karve_x`) and every ablation variant (`wo_typeagent`, `wo_gazetteer`, `wo_crossdemo`, `single_agent`) on the 10 sample sentences and writes predictions + metrics under `outputs/`. Swap `--experiment` for `ablf_conll03_en.yaml` or `ablf_masakhaner_swa.yaml` to try the other two datasets. This makes real LLM API calls and will incur provider cost.
+This runs full FRAME and every ablation variant (`wo_typeagent`, `wo_gazetteer`, `wo_crossdemo`, `single_agent`) on the sample sentences and writes predictions + metrics under `outputs/`. Swap `--experiment` for `ablf_conll03_en.yaml` or `ablf_masakhaner_swa.yaml` to try the other two datasets. This makes real LLM API calls and will incur provider cost.
 
 The cross-lingual bridge's dense retrieval mode downloads `paraphrase-multilingual-MiniLM-L12-v2` (~470MB) on first run; without internet access to Hugging Face, `DemoMemoryRetriever` falls back to a lexical (Jaccard) retrieval mode automatically.
 
