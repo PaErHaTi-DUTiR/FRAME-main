@@ -2,7 +2,7 @@
 
 **Failure-aware Knowledge Bridging for Low-Resource Multilingual Named Entity Recognition with Large Language Models**
 
-![FRAME overview](assets/fig_overview.png)
+![FRAME overview](assets/fig_overview_01.png)
 
 ## Overview
 
